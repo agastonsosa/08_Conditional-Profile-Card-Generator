@@ -7,33 +7,32 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
-  // Build the social media icons only if usernames are provided
   let socialMediaIcons = "";
   if (
-    variables.twitter ||
-    variables.github ||
-    variables.linkedin ||
-    variables.instagram
+    variables.twitter !== undefined ||
+    variables.github !== undefined ||
+    variables.linkedin !== undefined ||
+    variables.instagram !== undefined
   ) {
     socialMediaIcons = `
       <ul class=${variables.socialMediaPosition}>
         ${
-          variables.twitter
+          variables.twitter !== undefined
             ? `<li><a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a></li>`
             : ""
         }
         ${
-          variables.github
+          variables.github !== undefined
             ? `<li><a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a></li>`
             : ""
         }
         ${
-          variables.linkedin
+          variables.linkedin !== undefined
             ? `<li><a href="https://linkedin.com/${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>`
             : ""
         }
         ${
-          variables.instagram
+          variables.instagram !== undefined
             ? `<li><a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a></li>`
             : ""
         }
