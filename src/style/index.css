@@ -1,8 +1,8 @@
 body {
-  background-color: black;
+  background-color: rgb(40, 40, 40);
 }
 .filters {
-  background: black;
+  background-color: rgb(40, 40, 40);
   width: 100%;
 }
 .filters li {
@@ -55,19 +55,8 @@ body {
   display: block;
   margin: 10px 0;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #999;
 }
-.widget h1 {
-  margin: 60px 0 20px;
-  font-size: 26px;
-  color: #000;
-}
-.widget h3 {
-  font-size: 12px;
-}
+
 .widget ul {
   position: absolute;
   top: 20px;
@@ -98,13 +87,7 @@ body {
   border-bottom: 1px solid #2cd5ca;
   transition: background-color 0.3s;
 }
-.widget ul li:hover > a {
-  background: radial-gradient(
-    110% 112.8% at 15.76% 0%,
-    #cec9f8 0%,
-    #d4f9e0 75.83%
-  );
-}
+
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
 }
@@ -132,7 +115,7 @@ li {
 label {
   font-size: 14px;
   font-weight: 600;
-  margin: 5px 20px 5px 100px;
+  margin: 5px 20px 5px 80px;
 }
 .card {
   margin-top: 5px;
@@ -146,4 +129,18 @@ label {
   width: 200px;
   align-self: center;
   font-size: 12px;
+}
+.role-font {
+  font-family: "Handjet", cursive;
+  font-size: 3rem;
+}
+.city-font {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
+}
+.name-font {
+  font-family: "Handjet", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 50px 15px 5px 15px;
 }
