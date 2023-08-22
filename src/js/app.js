@@ -7,7 +7,6 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
-  // Build the social media icons only if usernames are provided
   let socialMediaIcons = "";
   if (
     variables.twitter !== undefined ||
